@@ -243,7 +243,7 @@ def update_lives():
     text = 'Lives: ' + str(lives)
 
     # Clear text
-    clear_texts(lives_area, lives_offset_width, lives_offset_height)
+    clear_text(lives_area, lives_offset_width, lives_offset_height)
 
     # Write text
     lives_area.color("red")
@@ -265,31 +265,12 @@ def update_score():
     text = 'Score: ' + str(score)
 
     # Clear text
-    clear_texts(score_area, score_offset_width, score_offset_height)
+    clear_text(score_area, score_offset_width, score_offset_height)
 
     # Write text
     score_area.color("blue")
     score_area.write(text, font=score_area_font, move=False)
     window.tracer(True)
-
-
-def clear_texts(area_turtle, offset_width, offset_height):
-    screen = turtle.Screen()
-    area_turtle.penup()
-    area_turtle.goto(offset_width / 2 - screen.window_width() / 2, screen.window_height() / 2 - offset_height / 2)
-    area_turtle.pendown()
-    area_turtle.color(turtle.bgcolor())
-    area_turtle.begin_fill()
-    area_turtle.fd(160)
-    area_turtle.setheading(90)
-    area_turtle.fd(30)
-    area_turtle.setheading(180)
-    area_turtle.fd(160)
-    area_turtle.setheading(270)
-    area_turtle.fd(30)
-    area_turtle.setheading(0)
-    area_turtle.fd(10)
-    area_turtle.end_fill()
 
 
 def game_loop():
