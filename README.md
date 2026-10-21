@@ -49,13 +49,8 @@ The game uses graphics and sound effects from external sources, including:
 
 [Space Shooter Extension](https://opengameart.org/content/space-shooter-extension-250)
 
-[Simple Space] (https://opengameart.org/content/simple-space)
+[Simple Space](https://opengameart.org/content/simple-space)
 
 The assets are organised into the images and sounds folders.
 
 Credit is given to the original creators. Please refer to each source for its licence and attribution requirements.
-## Built With
-
-- Python
-- Turtle Graphics
-- `playsound3`
